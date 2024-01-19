@@ -1,7 +1,7 @@
 if (CMAKE_CONAN_BUILD)
 	cmake_minimum_required(VERSION 3.24)
 else ()
-	cmake_minimum_required(VERSION 3.19)
+	cmake_minimum_required(VERSION 3.16)
 endif ()
 project(bip3x
         VERSION 3.0.0
@@ -207,7 +207,7 @@ else ()
 	# toolbox
 	fetchcontent_declare(
 		toolbox
-		GIT_REPOSITORY https://github.com/edwardstock/toolbox.git
+		GIT_REPOSITORY https://github.com/asnefedovv/dydx-v4-cpp-dep-edwardstock-toolbox.git
 		GIT_TAG 3.4.0
 	)
 	set(toolbox_BUILD_TESTS OFF)
